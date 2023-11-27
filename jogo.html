@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <title>JOGO: É PAR?</title>
+</head>
+
+<body>
+    <button id="botaoFechar">X</button>
+    <header>
+        <div class="caixasTxt">
+            <label for="dificuldade">Nível:</label>
+            <select name="dificuldade" id="dificuldade">
+                <option value="" selected disabled hidden>Selecione</option>
+                <option value="900">Fácil</option>
+                <option value="600">Normal</option>
+                <option value="300">Difícil</option>
+            </select>
+        </div>
+        <div class="caixasTxt">
+            <p>Tempo<span class="doisPontos">:</span> <span class="valores" id="tempo">00:00</span></p>
+        </div>
+        <div class="caixasTxt">
+            <input type="button" value="INICIAR" id="iniciar">
+            <input type="button" value="PAUSAR" id="pausar">
+            <input type="button" value="PARAR" id="parar">
+            
+        </div>
+    </header>
+    <main>
+        <p class="numero bloquearSelecao" id="numeroSorteado">_</p>
+    </main>
+    <footer>
+        <div class="caixasTxt">
+            <p>Acertos<span class="doisPontos">:</span> <span class="valores" id="acertos">0 (0.0%)</span></p>
+        </div>
+        <div class="caixasTxt">
+            <p>Erros<span class="doisPontos">:</span> <span class="valores" id="erros">0</span></p>
+        </div>
+        <div class="caixasTxt">
+            <p>Pares sorteados<span class="doisPontos">:</span> <span class="valores" id="paresSorteados">0</span></p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

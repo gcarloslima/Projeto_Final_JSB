@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&family=Ubuntu:ital,wght@0,400;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 20px;
+}
+
+
+body {
+    background-image: url(../img/Wonderland_.gif);
+    background-position: center;
+    background-size: cover;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    height: 8vh;
+    background: transparent;
+    align-items: center;
+    color: yellow;
+}
+
+main {
+    height: 84vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerSelecao {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+}
+.numero {
+    font-size: 15rem;
+    user-select: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    translate: 2%;
+}
+.red {
+    color:red !important;
+}
+.green {
+    color: lightgreen !important;
+}
+
+
+
+.bloquearSelecao {
+    pointer-events: none;
+}
+
+input[type="button"], select, option, .numero {
+    cursor: pointer;
+}
+
+input[type="button"] {
+    background-color: rgb(242, 242, 54);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s;
+    width: 130px;
+    font-size: 16px;
+}
+
+input[type="button"]:active {
+    transform: scale(0.9);
+    background-color: yellow;
+}
+
+input[type="button"]:disabled, input[type="button"][disabled] {
+    background-color: rgb(241, 241, 153);
+    cursor: default;
+}
+.caixasTxt {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    
+}
+
+#botaoFechar {
+    position: fixed;
+    top: 10px; 
+    right: 10px; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+  }
+
+  
+
+.valores {
+    color: white;
+}
+
+select {
+    background-color: black;
+    
+    color: white;
+}
+
+select option {
+    color: black;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .numero {
+        font-size: 5.5rem;
+        
+    }
+
+    
+
+    .caixasTxt {
+        text-align: center;
+        width: auto;
+    }
+    label, p, select, input[type="button"] {
+        font-size: 0.8rem;
+    }
+
+    input[type="button"] {
+        padding: 0.5rem 0;
+        width: 5rem;
+        font-size: 0.6rem;
+    }
+
+    .valores {
+        display: block;
+        text-align: center;
+    }
+    header, footer {
+        flex-direction: column;
+        gap: 1rem;
+        height: 25vh;
+        
+    }
+    main {
+        height: 50vh;
+    }
+    .doisPontos {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 750px) and (max-width: 800px) {
+
+    main {
+        height: 40vh;
+    }
+    header, footer {
+        height: 30vh;
+    }
+}
