@@ -29,7 +29,7 @@ window.addEventListener("load", function () {
                 text: "Selecione uma dificuldade",
                 confirmButtonColor: "#CCCCCC",
                 color: "white",
-                background: "#000000"
+                background: "#111111"
               });
         } else {
             musicGame.loop = true;
@@ -66,7 +66,7 @@ window.addEventListener("load", function () {
                         text: "Fim de jogo",
                         confirmButtonColor: "#CCCCCC",
                         color: "white",
-                        background: "#000000"
+                        background: "#111111"
                       });}, 1);
                 }
             }, 1000);
