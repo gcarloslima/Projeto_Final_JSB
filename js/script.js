@@ -20,6 +20,9 @@ window.addEventListener("load", function () {
     const fim = new Audio('https://gcarloslima.github.io/Projeto_Final_JSB/msc/videogame-death-sound-43894.mp3');
     const pauseGame = new Audio('https://gcarloslima.github.io/Projeto_Final_JSB/msc/pauseGame.mp3');
     document.getElementById("botaoFechar").addEventListener("click", () => window.location.href = "index.html");
+    const switchSelection = new Audio('https://gcarloslima.github.io/Projeto_Final_JSB/msc/click-button-140881.mp3');
+    document.getElementById("botaoFechar").addEventListener("click", () => window.location.href = "index.html");
+    
 
     function iniciar() {
         
@@ -126,6 +129,7 @@ window.addEventListener("load", function () {
 
 
     function setarDificuldade() {
+        switchSelection.play();
         if (selecaoDificuldade.value == '900') {
             tempo = 105;
         } else if (selecaoDificuldade.value == '600') {
