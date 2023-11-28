@@ -1,6 +1,6 @@
 window.addEventListener("load", function () {
     document.getElementById("btnLogin").addEventListener("click", fazerLogin);
-    const start = new Audio('https://gcarloslima.github.io/Projeto_Final_JSB//msc/game-start-6104.mp3');
+    const start = new Audio('https://gcarloslima.github.io/Projeto_Final_JSB/msc/game-start-6104.mp3');
     function fazerLogin() {
         var user = document.getElementById("login").value;
         var password = document.getElementById("password").value;
