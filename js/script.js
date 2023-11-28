@@ -19,7 +19,6 @@ window.addEventListener("load", function () {
     const acerto = new Audio('https://gcarloslima.github.io/Projeto_Final_JSB/msc/notification-for-game-scenes-132473.mp3');
     const fim = new Audio('https://gcarloslima.github.io/Projeto_Final_JSB/msc/videogame-death-sound-43894.mp3');
     const pauseGame = new Audio('https://gcarloslima.github.io/Projeto_Final_JSB/msc/pauseGame.mp3');
-    // const fim = videogame-death-sound-43894
     document.getElementById("botaoFechar").addEventListener("click", () => window.location.href = "index.html");
 
     function iniciar() {
