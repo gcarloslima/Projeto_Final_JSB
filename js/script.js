@@ -14,11 +14,11 @@ window.addEventListener("load", function () {
     botaoPausar.addEventListener("click", pausar);
     botaoParar.addEventListener("click", parar);
     selecaoDificuldade.addEventListener("change", setarDificuldade);
-    const musicGame = new Audio('../msc/video-game-music-loop-27629.mp3');
-    const erro = new Audio('../msc/video-game-hit-noise-001-135821.mp3');
-    const acerto = new Audio('../msc/notification-for-game-scenes-132473.mp3');
-    const fim = new Audio('../msc/videogame-death-sound-43894.mp3');
-    const pauseGame = new Audio('../msc/pauseGame.mp3');
+    const musicGame = new Audio('https://gcarloslima.github.io/Projeto_Final_JSB/msc/video-game-music-loop-27629.mp3');
+    const erro = new Audio('https://gcarloslima.github.io/Projeto_Final_JSB/msc/video-game-hit-noise-001-135821.mp3');
+    const acerto = new Audio('https://gcarloslima.github.io/Projeto_Final_JSB/msc/notification-for-game-scenes-132473.mp3');
+    const fim = new Audio('https://gcarloslima.github.io/Projeto_Final_JSB/msc/videogame-death-sound-43894.mp3');
+    const pauseGame = new Audio('https://gcarloslima.github.io/Projeto_Final_JSB/msc/pauseGame.mp3');
     // const fim = videogame-death-sound-43894
     document.getElementById("botaoFechar").addEventListener("click", () => window.location.href = "index.html");
 
